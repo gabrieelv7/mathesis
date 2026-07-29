@@ -1,0 +1,122 @@
+# Normalize text files in the repository
+* text=auto
+
+# Use LF for source code, configuration, containers, and CI
+*.cs             text eol=lf
+*.csproj         text eol=lf
+*.sln            text eol=lf
+*.slnx           text eol=lf
+*.props          text eol=lf
+*.targets        text eol=lf
+*.json           text eol=lf
+*.xml            text eol=lf
+*.config         text eol=lf
+*.yml            text eol=lf
+*.yaml           text eol=lf
+*.md             text eol=lf
+*.txt            text eol=lf
+*.sql            text eol=lf
+*.http           text eol=lf
+*.env            text eol=lf
+*.example        text eol=lf
+.editorconfig    text eol=lf
+
+# Docker
+Dockerfile          text eol=lf
+*.dockerfile        text eol=lf
+docker-compose.yml  text eol=lf
+docker-compose.yaml text eol=lf
+
+# Shell scripts
+*.sh             text eol=lf
+*.bash           text eol=lf
+*.zsh            text eol=lf
+
+# PowerShell
+*.ps1            text eol=lf
+*.psm1           text eol=lf
+*.psd1           text eol=lf
+
+# Frontend
+*.js             text eol=lf
+*.jsx            text eol=lf
+*.ts             text eol=lf
+*.tsx            text eol=lf
+*.mjs            text eol=lf
+*.cjs            text eol=lf
+*.css            text eol=lf
+*.scss           text eol=lf
+*.sass           text eol=lf
+*.less           text eol=lf
+*.html           text eol=lf
+*.vue            text eol=lf
+*.svg            text eol=lf
+
+# Dependency and lock files
+package.json       text eol=lf
+package-lock.json  text eol=lf
+pnpm-lock.yaml     text eol=lf
+yarn.lock          text eol=lf
+global.json        text eol=lf
+nuget.config       text eol=lf
+
+# GitHub configuration
+.github/**         text eol=lf
+
+# Windows-specific scripts
+*.bat            text eol=crlf
+*.cmd            text eol=crlf
+*.reg            text eol=crlf
+
+# Images
+*.png            binary
+*.jpg            binary
+*.jpeg           binary
+*.gif            binary
+*.webp           binary
+*.ico            binary
+*.bmp            binary
+
+# Fonts
+*.woff           binary
+*.woff2          binary
+*.ttf            binary
+*.otf            binary
+
+# Documents and archives
+*.pdf            binary
+*.doc            binary
+*.docx           binary
+*.xls            binary
+*.xlsx           binary
+*.ppt            binary
+*.pptx           binary
+*.zip            binary
+*.tar            binary
+*.gz             binary
+*.7z             binary
+
+# Compiled binaries
+*.dll            binary
+*.exe            binary
+*.pdb            binary
+*.so             binary
+*.dylib          binary
+
+# Local databases
+*.db             binary
+*.sqlite         binary
+*.sqlite3        binary
+
+# Certificates and keys
+*.pfx            binary
+*.p12            binary
+*.cer            binary
+*.crt            text eol=lf
+*.pem            text eol=lf
+
+# Generated and vendored files
+**/Migrations/*.Designer.cs linguist-generated=true
+**/*.g.cs                   linguist-generated=true
+**/*.generated.cs           linguist-generated=true
+**/wwwroot/lib/**           linguist-vendored=true
