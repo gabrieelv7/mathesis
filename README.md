@@ -743,9 +743,7 @@ External contributions may be accepted in the future. Until then, issues and dis
 
 ## License
 
-A license has not yet been selected.
-
-Before accepting external contributions or publishing reusable components, the repository should define an explicit license such as MIT or Apache-2.0.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
