@@ -1,0 +1,73 @@
+name: Feature request
+description: Suggest a new feature or improvement
+title: "[Feature]: "
+labels:
+  - "type: feature"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem and the expected value before proposing implementation details.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem or need should this feature address?
+      placeholder: As a user, I need...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution
+      description: Describe the expected behavior or possible solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits
+      description: Explain how this change would improve the project or user experience.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define the conditions required for this feature to be considered complete.
+      placeholder: |
+        - [ ] The user can...
+        - [ ] The system validates...
+        - [ ] Automated tests are included.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe other solutions or workarounds that were considered.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add mockups, references, diagrams, or related issues.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched for existing issues before creating this request.
+          required: true
+        - label: This request describes a single feature or improvement.
+          required: true

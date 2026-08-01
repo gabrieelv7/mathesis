@@ -1,0 +1,85 @@
+name: Task
+description: Create a technical, documentation, infrastructure, or maintenance task
+title: "[Task]: "
+labels:
+  - "type: task"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Explain what needs to be done and why.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Select the main area affected by this task.
+      options:
+        - Backend
+        - Frontend
+        - Database
+        - Infrastructure
+        - CI/CD
+        - Documentation
+        - Repository configuration
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Describe what is included in this task.
+      placeholder: |
+        This task includes:
+        - ...
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define the verifiable conditions required to complete this task.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+        - [ ] Documentation is updated.
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: Technical notes
+      description: Add technical constraints, implementation suggestions, or relevant decisions.
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List related issues, pull requests, or external dependencies.
+      placeholder: |
+        Depends on #...
+        Blocks #...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: definition-of-done
+    attributes:
+      label: Definition of done
+      options:
+        - label: The acceptance criteria have been met.
+          required: true
+        - label: Relevant tests have been added or updated.
+          required: false
+        - label: Relevant documentation has been updated.
+          required: false

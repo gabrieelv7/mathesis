@@ -1,0 +1,92 @@
+name: Bug report
+description: Report an error or unexpected behavior
+title: "[Bug]: "
+labels:
+  - "type: bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug. Please provide enough information for us to reproduce and investigate the problem.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the problem clearly and briefly.
+      placeholder: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: Describe what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current behavior
+      description: Describe what actually happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide the steps required to reproduce the problem.
+      placeholder: |
+        1. Start the application
+        2. Open...
+        3. Click...
+        4. See the error
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Application version or commit
+      description: Provide the application version or Git commit, when available.
+      placeholder: v0.1.0 or commit hash
+    validations:
+      required: false
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system
+      placeholder: Linux Mint 22, Ubuntu 24.04, Windows 11
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and error messages
+      description: Paste relevant logs or error messages. Remove sensitive information.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add screenshots, links, or other relevant information.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched for existing issues before creating this report.
+          required: true
+        - label: I removed passwords, tokens, and other sensitive information.
+          required: true
